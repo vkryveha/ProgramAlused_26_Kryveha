@@ -1,5 +1,6 @@
-from random import * #randit
-#�lesanne 1
+﻿from random import * #randit
+from math import *
+#Ülesanne 1
 print ("Tere, maailm")
 nimi = input("Siseta ona nimi: ")
 print(f"Tere, maailm! Tervitan sind {nimi}!")
@@ -10,20 +11,60 @@ except ValueError:
     print("Palun siseta kehtiv number vanuse jaoks. ")
 
 
-#�lesanne 2
+#Ülesanne 2
 vanus=18
 eesnimi="Vika"
 pikkus=16.5
-kes_k�ib_koolis=True 
-print(f"Vanus:{vanus}, t��p: {type(vanus)}")
-print(f"Eesnimi:{eesnimi}, t��p: {type(eesnimi)}")
-print(f"Pikkus:{pikkus}, t��p: {type(pikkus)}")
-print(f"K�ib koolis:{kas_k�ib_koolis}, t��p: {type(kas_k�ib_koolis)}")
+kas_käib_koolis=True 
+print(f"Vanus:{vanus}, tüüp: {type(vanus)}")
+print(f"Eesnimi:{eesnimi}, tüüp: {type(eesnimi)}")
+print(f"Pikkus:{pikkus}, tüüp: {type(pikkus)}")
+print(f"Käib koolis:{kas_käib_koolis}, tüüp: {type(kas_käib_koolis)}")
 
 
-#�lesanne 3
-kommide_arv=randit(1,100)        #int(input("Kommide arv: "))
+#Ülesanne 3
+kommide_arv=randint(1,100)        #int(input("Kommide arv: "))
 print(f"Laud on {kommide_arv} kommi.")
-kommid=int(input("Mitu kommi soovid �ra v�tta? "))
-kommide_arv -= kommid
-print(f"Laud on n��d {kommide_arv} kommi.")
+try:
+    kommid=int(input("Mitu kommi soovid ära võtta? "))
+    kommide_arv -= kommid
+    print(f"Laud on nüüd {kommide_arv} kommi.")
+except ValueError: 
+    print("Palun siseta number.")
+
+
+#Ülesanne 4
+try:
+    ümbermõõt=float(input("Siseta puu ümbermõõt: "))
+    läbimõõt=round(ümbermõõt/pi,1)
+    print(f"Puu läbimõõt on {läbimõõt}.")
+except ValueError:
+    print("Palun siseta number.")
+
+
+#Ülesanne 5 
+try:
+    N=float(input("Siseta ristküliku esimene külg (N): "))
+    M=float(input("Siseta ristküliku esimene külg (M): "))
+
+    diagonaal=round(sqrt(N**2 + M**2), 1)
+    print (f"Ristküliku diagonaal on {diagonaal}.")
+except ValueError:
+    print("Palun siseta kehtiv number.")
+
+#Ülesanne 6 
+arv1=randint(1, 100)
+arv2=randint(1, 100)
+arv3=randint(1, 100)
+arv4=randint(1, 100)
+arv5=randint(1, 100)
+summa=arv1+arv2+arv3+arv4+arv5
+try:
+    jagaja= int(input("Siseta arv, millega jagada: "))
+    tulemus=summa/jagaja
+    print("Tulemus:", tulemus)
+    print("Täisarvuline osa:", int(tulemus))
+
+    print("Jääk:", summa % jagaja)
+except ValueError:
+    print("Palun siseta kehtiv number.")
