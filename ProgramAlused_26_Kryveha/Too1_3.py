@@ -119,3 +119,4 @@ try:
     print(f"{tunnid}:{jaak:02d}")
 except ValueError:
      print("Palun sisesta täisarv!")
+
