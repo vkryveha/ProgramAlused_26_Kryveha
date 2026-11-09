@@ -120,3 +120,13 @@ try:
 except ValueError:
      print("Palun sisesta täisarv!")
 
+
+
+
+
+
+
+
+
+
+
