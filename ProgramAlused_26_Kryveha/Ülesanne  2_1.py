@@ -148,33 +148,33 @@
     
 
 #Ülesanne 8
-arve="Toode   Kogus   Hint   Kokku\n"
-valik=input("Kas soovid osta piima? (jah/ei): ")
-if valik.lower()=="jah":
-        kogus=input("Kui palju piima soovid osta (täisarv): ")
-        if kogus.isdigit():
-           kogus=int(kogus)
-           piim_hind=round(uniform(0.5, 3), 2)
-           print(f"Piima hind on {piim_hind} eurot.")
-           summa+=kogus*piim_hind
-           print(f"Piima kogusumma on {kogus*piim_hind} eurot.")
-           arve+=f"piim {kogus} {piim_hind}€  "
-else:
-    print("Selge: Piima ei taha")
-print(f"Kogusumma on:{round(summa,2)} eurot.")
+# arve="Toode   Kogus   Hint   Kokku\n"
+# valik=input("Kas soovid osta piima? (jah/ei): ")
+# if valik.lower()=="jah":
+#         kogus=input("Kui palju piima soovid osta (täisarv): ")
+#         if kogus.isdigit():
+#            kogus=int(kogus)
+#            piim_hind=round(uniform(0.5, 3), 2)
+#            print(f"Piima hind on {piim_hind} eurot.")
+#            summa+=kogus*piim_hind
+#            print(f"Piima kogusumma on {kogus*piim_hind} eurot.")
+#            arve+=f"piim {kogus} {piim_hind}€  "
+# else:
+#     print("Selge: Piima ei taha")
+# print(f"Kogusumma on:{round(summa,2)} eurot.")
 
 
 
-valik=input("Kas soovid osta sai? (jah/ei): ")
-if valik.lower()=="jah":
-        kogus=input("Kui palju sai soovid osta (täisarv): ")
-        if kogus.isdigit():
-            kogus=int(kogus)
-            sai_hind=round(uniform(0.5, 3), 2)
-            print(f"Sai hind on {sai_hind} eurot.")
-            summa+=kogus*sai_hind
-            print(f"Sai kogusumma on {kogus*sai_hind} eurot.")
-            arve+=f"sai {kogus} {sai_hind}€  "
-else:
-    print("Selge: Sai ei taha")
-print(f"Kogusumma on:{round(summa,2)} eurot.")
+# valik=input("Kas soovid osta sai? (jah/ei): ")
+# if valik.lower()=="jah":
+#         kogus=input("Kui palju sai soovid osta (täisarv): ")
+#         if kogus.isdigit():
+#             kogus=int(kogus)
+#             sai_hind=round(uniform(0.5, 3), 2)
+#             print(f"Sai hind on {sai_hind} eurot.")
+#             summa+=kogus*sai_hind
+#             print(f"Sai kogusumma on {kogus*sai_hind} eurot.")
+#             arve+=f"sai {kogus} {sai_hind}€  "
+# else:
+#     print("Selge: Sai ei taha")
+# print(f"Kogusumma on:{round(summa,2)} eurot.")

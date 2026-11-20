@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>db5558f0-41ec-40c1-986f-b28d735915ca</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Ülesanne  2_1.py</StartupFile>
+    <StartupFile>Too 2_5.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="module2.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ProgramAlused_26_Kryveha.py" />
+    <Compile Include="Too 2_5.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Too.1.31.py">
       <SubType>Code</SubType>
     </Compile>
@@ -32,6 +41,9 @@
     <Compile Include="Ülesanne  2_1.py">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
