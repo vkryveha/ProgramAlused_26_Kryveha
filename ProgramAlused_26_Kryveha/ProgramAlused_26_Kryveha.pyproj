@@ -27,6 +27,9 @@
     <Compile Include="3_6.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="iseseisvtöö3_1.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="module1.py">
       <SubType>Code</SubType>
     </Compile>

@@ -92,3 +92,26 @@ try:
             print("viga")
 except ValueError:
     print("Viga")
+
+
+
+    22.
+summa = 0
+
+for i in range(100, 201):
+    if i % 17 == 0:
+        summa = summa + i
+
+print(summa)
+
+
+
+31.
+K = int(input("Mitu kotletti? "))
+M = int(input("Mitu kotletti mahub pannile? "))
+
+tais = K // M
+jaak = K % M
+
+print("T‰is pannit‰isi:", tais)
+print("Viimasele pannile j‰‰b:", jaak)

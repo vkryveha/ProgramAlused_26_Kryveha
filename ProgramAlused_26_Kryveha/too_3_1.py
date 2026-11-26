@@ -8,24 +8,48 @@ while True:
     print("5")
     print("6")
     valik=input("Sisesta ülesande number (1-6) või 'q' väljumiseks: ")
+
+
     if valik == '1':
-        pass
     elif valik == '2':
-        pass
     elif valik == '3':
-        pass
     elif valik == '4':
-        pass
     elif valik == '5':
-        pass
     elif valik == '6':
-        pass
+        
     elif valik.lower() == 'q':
         break
     else:
         print("Viga: Palun sisetsa number 1 - 6 või 'q' väljumiseks.")
+        try:
+            N=int(input("Sisesta arv N > 0: "))
+            if N > 0: break 
+        except ValueError: 
+            print("Palun sisesta kehtiv täisarv.")
+            continue
+        for i in range(N):
+            while True:
+                try:
+                    arv = float(input(f"{i + 1}. arv:"))
+                    break
+                except ValueError:
+                    print("Palun sisesta kehtiv arv.")
+                if arv < 0:
+                    print("Negatiivne arv.")
+                    neg_kogus += 1
+                elif arv > 0:
+                    print("positiivne arv.")
+                    pos_kogus = 1
+                else:
+                    print("Null")
+                    
 
-
+                
+    elif valik.lower() == 'q':
+        print("Programmist väljumine...")
+        break
+    else:
+        print("Viga: Palun sisesta number 1-6 või 'q' väljumiseks.")
 
 if valik == '1':
     #ül1
